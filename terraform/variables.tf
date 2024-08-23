@@ -19,7 +19,7 @@ variable "instance" {
   default = {
     "ami"           = "ami-04e601abe3e1a910f"
     "instance_type" = "t2.micro"
-    "key_name"      = "aws_ed25519"
+    "key_name"      = "ec2_ssh_token"
     "volume_size"   = 8 # in gibibytes (GiB)
     "volume_type"   = "gp2"
   }
