@@ -32,11 +32,11 @@ variable "resource_names" {
   type        = map(any)
   default = {
     "instance_name" = "word_press"
-    "vpc_name"      = "vpc-raketa-vpn"
-    "subnet_name"   = "subnet-raketa-vpn"
-    "IGW_name"      = "IGW-raketa-vpn"
-    "rtb_name"      = "route-table-raketa-vpn"
-    "sg_name"       = "security-group-raketa-vpn"
+    "vpc_name"      = "vpc-word-press"
+    "subnet_name"   = "subnet-word-press"
+    "IGW_name"      = "IGW-word-press"
+    "rtb_name"      = "route-table-word-press"
+    "sg_name"       = "security-group-word-press"
   }
 }
 
