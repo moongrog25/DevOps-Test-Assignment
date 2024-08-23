@@ -8,6 +8,16 @@ output "instance_public_ip" {
   value       = aws_instance.word_press.public_ip
 }
 
+output "ssh_command" {
+  description = "Public IP address of the EC2 instance"
+  value       = <<EOF
+
+ssh ubuntu@${aws_instance.word_press.public_ip} -i ~/.ssh/ec2_ssh_token -o "StrictHostKeyChecking no"
+
+EOF
+
+}
+
 # # Generate inventory file
 # resource "local_file" "inventory" {
 #  filename = "../ansible/hosts.ini"
